@@ -3,10 +3,6 @@ const jsforce = require('jsforce');
 const app = express();
 const PORT = 3001;
 require('dotenv').config()
-const cors = require('cors');
-
-app.use(cors());
-
 
 const { SF_LOGIN_URL, SF_USERNAME, SF_PASSWORD, SF_TOKEN } = process.env;
 const conn = new jsforce.Connection({
